@@ -49,10 +49,10 @@
 
  
 ### 주의 사항:
- - 서버-클라이언트 환경에서 쓸 경우에는 my_predict.py에서 51, 52, 67, 87줄에서 사용자 환경에 맞게 다시 경로 설정 해야함
+ - 서버-클라이언트 환경에서 쓸 경우에는 my_predict.py에서 51, 52, 67, 87줄에서 사용자 환경에 맞게 다시 경로 설정 해야한다.
  - 서버 버전의 경우 장고와 카카오톡 플러스친구 api 에 맞게 작성 되었다. 서버 돌릴시 카카오톡 플러스친구와 같이 돌려야 한다.
  
-### 카카오톡 플러스친구 'MovieChatBot'을 통해서 영화 정보 제공 Chatbot을 이용할 수 있습니다.
+~~### 카카오톡 플러스친구 'MovieChatBot'을 통해서 영화 정보 제공 Chatbot을 이용할 수 있습니다.~~
+현재는 서버가 닫혀있어 이용이 불가합니다. 아래의 유튜브 동영상을 통해서 어떻게 챗봇이 구동되는지 확인 할 수 있습니다.
 
-<html>
-<iframe width="854" height="480" src="https://youtu.be/ZTLiM22q3vU" frameborder="0" allowfullscreen></iframe></html>
+[![Alt text for your video](https://img.youtube.com/vi/ZTLiM22q3vU/0.jpg)](https://youtu.be/ZTLiM22q3vU)
