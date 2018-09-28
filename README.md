@@ -55,4 +55,4 @@
 ~~### 카카오톡 플러스친구 'MovieChatBot'을 통해서 영화 정보 제공 Chatbot을 이용할 수 있습니다.~~
 현재는 서버가 닫혀있어 이용이 불가합니다. 아래의 유튜브 동영상을 통해서 어떻게 챗봇이 구동되는지 확인 할 수 있습니다.
 
-[![Alt text for your video](https://img.youtube.com/vi/ZTLiM22q3vU/0.jpg)](https://youtu.be/ZTLiM22q3vU)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZTLiM22q3vU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
