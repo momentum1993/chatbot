@@ -53,3 +53,6 @@
  - 서버 버전의 경우 장고와 카카오톡 플러스친구 api 에 맞게 작성 되었다. 서버 돌릴시 카카오톡 플러스친구와 같이 돌려야 한다.
  
 ### 카카오톡 플러스친구 'MovieChatBot'을 통해서 영화 정보 제공 Chatbot을 이용할 수 있습니다.
+
+<html>
+<iframe width="854" height="480" src="https://youtu.be/ZTLiM22q3vU" frameborder="0" allowfullscreen></iframe></html>
