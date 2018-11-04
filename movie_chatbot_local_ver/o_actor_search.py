@@ -16,8 +16,15 @@ def actor_name_search(keyword):
     newLine = url+"&actor="+utfLine+"&startCount=0&listCount=100&sort=prodYear,1"
     print(newLine)
     # xml 탐색 부분.
-    tree = ET.ElementTree(file=urllib.request.urlopen(newLine))
+    try:
+        tree = ET.ElementTree(file=urllib.request.urlopen(newLine))
+    except:
+        newLine = url + "&actor=" + utfLine + "&startCount=0&sort=prodYear,1"
+        tree = ET.ElementTree(file=urllib.request.urlopen(newLine))
     root = tree.getroot()  # root 노드
 
-    for i in range(0, int(root[2].attrib.get('TotalCount'))):  # 모든 제목 출력
-        print(str(i+1)+".", root[2][i][3].text)
+    if int(root[2].attrib.get('TotalCount')) == 0:
+        print("배우 '"+keyword+"'에 대한 검색정보가 없습니다.")
+    else:
+        for i in range(0, int(root[2].attrib.get('TotalCount'))):  # 모든 제목 출력
+            print(str(i+1)+".", root[2][i][3].text)

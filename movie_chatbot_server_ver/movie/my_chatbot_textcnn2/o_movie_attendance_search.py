@@ -10,14 +10,18 @@ def movie_attendance_search(keyword):
 
     str_keyword = str(keyword.encode('utf-8'))[2:-1].replace('\\x', '%')
     plus = "+"
-    total_attendance = "누적관객수"
+    total_attendance = "영화"
     str_total_attendance = str(total_attendance.encode('utf-8'))[2:-1].replace('\\x', '%')
-    url = url + str_keyword + plus + str_total_attendance
+    url = url + str_total_attendance + plus + str_keyword
     hdr = {'User-Agent': 'Mozilla/5.0'}
     requ = Request(url, headers=hdr)
 
     res = req.urlopen(requ)
     soup = BeautifulSoup(res, 'html.parser')
-    people = soup.select_one("div > a > em.v").string
-    ret.append("영화 " + keyword + "의 누적관객수 정보입니다. " + people)
+    people = soup.select_one("div > dl > dt#dss_h_movie_info_total_audience + dd > span")
+
+    if people is None:
+        ret.append("해당 영화 '"+ keyword +"'에 대한 누적관객수 정보가 없습니다.")
+    else:
+        ret.append("영화 '" + keyword + "'의 누적관객수 정보입니다. " + people.text)
     return ret
