@@ -7,7 +7,7 @@
  - Sklearn
  - Konlpy
  - Mecab
- - Genlsim
+ - Gensim
  - Pandas
  - BeautifulSoup
  
